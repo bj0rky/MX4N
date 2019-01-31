@@ -2,6 +2,11 @@
 
 A brave effort to make a flashable linux image for the MX4N (8G1/1G) board fouund in the SCISHION V88 Android TV box
 
+:warning: WARNING :warning:
+```
+ Experimental stuff going on here, proceed with caution! 
+```
+
 
 MX4N 8G/1G
 
@@ -23,3 +28,37 @@ MX4N 8G/1G
 - [ ] Video Output while booting
 - [ ] Enable UART routing to USB port(?)
 - [ ] Enable netbooting
+
+# How-to UART
+
+###### What you need
+- USB A Male to Male adapter
+- Empty microSD adatper
+- 3x Breadboard wires
+
+
+###### Wiring
+SDslot pinout seen from back of slot
+```
+ 9   1   2   3   4   5   6   7   8
+[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
+```
+
+
+
+```
+USB-TTL     SDslot
+  RXD   ->    7
+  TXD   ->    2
+  GND   ->   GND
+```
+Insert the microSD adapter halfway and get the breaboard wires into the back of SDslot [See picture](docs/PICTURES.md) and connect
+them to the USB-TTL adapter
+
+Connect USB-TTL and open terminal emulator of choice
+```
+Baudraute : 1.5M (1500000)
+Data bits : 8
+Stop bits : 1
+```
+Insert USB A Male to Male adapter into the OTG usb port (USB-4) and you should see lots of text scrolling in your terminal window (rejoice!) :thumbsup:
