@@ -44,7 +44,7 @@ SDslot pinout seen from back of slot
 [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
 ```
 
-
+USB-TTL and SDslot wiring
 
 ```
 USB-TTL     SDslot
@@ -62,3 +62,20 @@ Data bits : 8
 Stop bits : 1
 ```
 Insert USB A Male to Male adapter into the OTG usb port (USB-4) and you should see lots of text scrolling in your terminal window (rejoice!) :thumbsup:
+
+
+# How-to Build U-Boot
+
+Follow this guide
+
+or..
+
+One [script](scripts/README.md) to handle it all
+
+
+
+## How to flash new u-boot.img to board
+
+
+
+## How-To boot the new u-boot.img from SD
