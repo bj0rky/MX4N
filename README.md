@@ -79,3 +79,18 @@ One [script](scripts/README.md) to handle it all
 
 
 ## How-To boot the new u-boot.img from SD
+
+# How-to recover
+
+- Start AndroidTool/RKBatchTool
+- Shorten pins 8 & 9 on the nand chip (see image and make sure you do this right!!!)
+- Power up using the OTG port
+
+You should now see 'Found One MASKROM Device'
+
+- Click the 'Upgrade Firmware' tab, then 'EraseFlash' (i had to select firmware before erasing)
+- If successful, hit the 'Upgrade' button
+
+All good? 
+
+###### 
