@@ -61,7 +61,7 @@ Baudraute : 1.5M (1500000)
 Data bits : 8
 Stop bits : 1
 ```
-Insert USB A Male to Male adapter into the OTG usb port (USB-4) and you should see lots of text scrolling in your terminal window (rejoice!) :thumbsup:
+Insert USB A Male to Male adapter into the OTG usb port (USB-4) and you should see lots of [text](/uart_output.txt) scrolling in your terminal window (rejoice!) :thumbsup:
 
 
 # How-to Build U-Boot
