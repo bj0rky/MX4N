@@ -1,6 +1,6 @@
 # MX4N
 
-A brave effort to make a flashable linux image for the MX4N (8G1/1G) board fouund in the SCISHION V88 Android TV box
+A brave effort to make a flashable linux image for the MX4N-V20 (8G1/1G) board found in the SCISHION V88 Android TV box
 
 :warning: WARNING :warning:
 ```
@@ -80,7 +80,9 @@ One [script](scripts/README.md) to handle it all
 
 ## How-To boot the new u-boot.img from SD
 
-# How-to recover
+# How to..
+
+## How-to recover
 
 - Start AndroidTool/RKBatchTool
 - Shorten pins 8 & 9 on the nand chip (see image and make sure you do this right!!!)
@@ -91,6 +93,12 @@ You should now see 'Found One MASKROM Device'
 - Click the 'Upgrade Firmware' tab, then 'EraseFlash' (i had to select firmware before erasing)
 - If successful, hit the 'Upgrade' button
 
-All good? 
+All good?
 
+## Repair corrupted SDcard..
+Red LED after tampering with the files on SDcard? 
+```
+sudo fdisk -l
+sudo fsck -a /dev/sd[partition] 
+```
 ###### 
